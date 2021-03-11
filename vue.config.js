@@ -19,7 +19,8 @@ module.exports = {
     devServer: {
       watchOptions: {
         poll: true // Enable hot reload
-      }
+      },
+      disableHostCheck: true
     }
   }
 };
