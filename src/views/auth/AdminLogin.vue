@@ -15,10 +15,10 @@
           }}</v-card-title>
           <v-form ref="loginForm" class="ma-3" @submit.prevent="login">
             <v-text-field
-              :label="$t('general.auth.email')"
-              v-model="email"
+              label="Username"
+              v-model="username"
               placeholder=""
-              :rules="emailRules"
+              :rules="usernameRules"
               outlined
               required
             ></v-text-field>
@@ -71,13 +71,12 @@ import LocaleSelector from "@components/LocaleSelector.vue";
 export default {
   components: { LocaleSelector },
   data: () => ({
-    email: "",
+    username: "",
     password: "",
     remember: false,
     rememberMe: false,
-    emailRules: [
+    usernameRules: [
       v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
     passwordRules: [v => !!v || "Password is required"]
   }),
@@ -90,7 +89,7 @@ export default {
   mounted() {
     if (localStorage.getItem("credentials")) {
       let credentials = JSON.parse(localStorage.getItem("credentials"));
-      this.email = credentials.email;
+      this.username = credentials.username;
       this.password = credentials.password;
       this.rememberMe = credentials.rememberMe;
     }
@@ -99,7 +98,7 @@ export default {
     login() {
       if(this.$refs.loginForm.validate()){
         let credentials = {
-          email: this.email,
+          username: this.username,
           password: this.password,
           remember: this.remember,
           rememberMe: this.rememberMe
