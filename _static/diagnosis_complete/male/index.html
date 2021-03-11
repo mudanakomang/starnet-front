@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>完全判定</title>
+  <link rel="stylesheet" href="/_static/css/reset.css">
+  <link rel="stylesheet" href="/_static/css/diagnosis-common.css">
+  <link rel="stylesheet" href="/_static/css/diagnosis_complete/male.css"> </head>
+<body>
+  <header>
+    <h1 class="logo">
+      <img src="/_static/images/logo02.png" alt="logo01"> 
+    </h1>
+  </header>
+  <main>
+    <section class="top" id="top">
+      <h2 class="judment-start-button"> 
+        <button id="judmentStartButton">
+          <img src="/_static/images/ico_check03.png" alt="ico_check02">
+          <span class="judment-start-text">
+            完全判定スタート
+          </span>
+          <span class="greater">></span>
+        </button>
+      </h2>
+    </section>
+    <section class="question" id="question">
+      <h2 class="question-mark"> Q<span id="questionNumber"></span> </h2>
+      <div class="question-text" id="questionText"></div>
+      <div class="question-option-contents">
+        <div class="question-option-upper-content"> 
+          <button class="question-option-button" id="yes">はい</button> 
+          <button class="question-option-button" id="no">いいえ</button> 
+        </div>
+      </div>
+      <div class="question-progress">
+        <p class="question-progress-text">判定終了まであと<span id="questionProgressNumber"></span></p> 
+        <progress class="question-progress-bar" id="questionProgressBar" max="25" value="1"></progress>
+      </div>
+    </section>
+    <section class="result" id="result">
+      <h2>あなたの判定結果は•••</h2>
+      <div class="result-contents">
+        <div class="result-content">
+          <h3 class="chara-text">プラス</h3>
+          <div class="score" id="plusScoreGraph">
+            <div class="score-text" id="plusScore">0</div>
+            <div class="dot">点</div>
+          </div>
+        </div>
+        <div class="result-content">
+          <h3 class="chara-text">マイナス</h3>
+          <div class="score" id="minusScoreGraph">
+            <div class="score-text" id="minusScore">0</div>
+            <div class="dot">点</div>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: TOPへのURLの設定は後ほど行ってください -->
+      <div class="top-button"> <button onclick="location.href='./index.html'">理想判定へ進む</button> </div>
+    </section>
+  </main>
+  <script src="/_static/js/diagnosis_complete/common.js"></script>
+</body>
+</html>

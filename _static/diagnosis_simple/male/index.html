@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>簡易判定</title>
+  <link rel="stylesheet" href="/_static/css/reset.css">
+  <link rel="stylesheet" href="/_static/css/diagnosis-common.css">
+  <link rel="stylesheet" href="/_static/css/diagnosis_simple/male.css"> </head>
+<body>
+  <header>
+    <h1 class="logo">
+      <img src="/_static/images/logo02.png" alt="logo01"> 
+    </h1>
+  </header>
+  <main>
+    <section class="top" id="top">
+      <h2 class="judment-start-button"> 
+        <button id="judmentStartButton">
+          <img src="/_static/images/ico_check03.png" alt="ico_check02">
+          <span class="judment-start-text">
+            簡易判定スタート
+          </span>
+          <span class="greater">></span>
+        </button> 
+      </h2>
+    </section>
+    <section class="question" id="question">
+      <h2 class="question-mark"> Q<span id="questionNumber"></span> </h2>
+      <div class="question-text" id="questionText"></div>
+      <div class="question-option-contents">
+        <div class="question-option-upper-content"> 
+          <button class="question-option-button" id="exactly">そのとおり</button> 
+          <button class="question-option-button" id="notReally">そうでもない</button> 
+        </div>
+        <div class="question-option-under-content"> 
+          <button class="question-option-button" id="wellLikeThat">まぁそんな感じ</button> 
+        </div>
+      </div>
+      <div class="question-progress">
+        <p class="question-progress-text">判定終了まであと<span id="questionProgressNumber"></span></p> 
+        <progress class="question-progress-bar" id="questionProgressBar" max="45" value="1"></progress> 
+      </div>
+    </section>
+    <section class="result" id="result">
+      <h2>あなたの判定結果は•••</h2>
+      <div class="result-contents">
+        <div class="result-content">
+          <h3 class="chara-text">王子</h3>
+          <div class="score" id="princeScoreGraph">
+            <div class="score-text" id="princeScore">110</div>
+            <div class="dot">点</div>
+          </div>
+          <div class="chara-img"> <img src="/_static/images/charactor07.png" alt="charactor01"> </div>
+        </div>
+        <div class="result-content">
+          <h3 class="chara-text">カウンセラー</h3>
+          <div class="score" id="counselorScoreGraph">
+            <div class="score-text" id="counselorScore">110</div>
+            <div class="dot">点</div>
+          </div>
+          <div class="chara-img"> <img src="/_static/images/charactor08.png" alt="charactor02"> </div>
+        </div>
+        <div class="result-content">
+          <h3 class="chara-text">男の子</h3>
+          <div class="score" id="boyScoreGraph">
+            <div class="score-text" id="boyScore">110</div>
+            <div class="dot">点</div>
+          </div>
+          <div class="chara-img"> <img src="/_static/images/charactor09.png" alt="charactor03"> </div>
+        </div>
+      </div>
+      <!-- TODO: TOPへのURLの設定は後ほど行ってください -->
+      <div class="top-button"> <button onclick="location.href='./index.html'">TOPへ戻る</button> </div>
+    </section>
+  </main>
+  <script src="/_static/js/diagnosis_simple/male.js"></script>
+</body>
+</html>

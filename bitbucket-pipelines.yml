@@ -1,0 +1,28 @@
+image: node:12.20.1
+
+pipelines:
+  branches:
+    release/live_deploy_ftp: #please create this branch first time before start test_deploy.
+      - step:
+          name: Yarn run build
+          caches:
+            - node
+          script:
+            - node
+            - yarn
+            - rm .env && cp .env.test_on_xserver .env && cat .env
+            - yarn run build
+            - ls dist
+          artifacts: # Share files to after step.
+            - dist/**
+      - step:
+          name: Deploy to XServer by FTP (First time)
+          script:
+            - apt-get update
+            - apt-get -qq install git-ftp
+            - git config git-ftp.user $FTP_USERNAME_LIVE
+            - git config git-ftp.password $FTP_PASSWORD_LIVE
+            - git config git-ftp.url $FTP_HOST_PATH_LIVE
+            - git config git-ftp.syncroot dist/ # .git-ftp-include file is necessary because dist directory is ignored by .gitignore
+            - ls dist
+            - git ftp push -s deploy_to_xserver

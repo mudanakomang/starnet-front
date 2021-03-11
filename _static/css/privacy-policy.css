@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  main {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.minor {
+  color: #E43C00;
+}
+
+.establishment-date {
+  margin-top: 12px;
+  text-align: right;
+}

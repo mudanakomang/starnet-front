@@ -1,0 +1,139 @@
+h2 {
+  width: 1024px;
+  margin-top: 38px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #343434;
+}
+
+.application-content {
+  width: 540px;
+  padding-bottom: 100px;
+}
+
+.application-content h3,
+.application-content p {
+  text-align: center;
+}
+
+.application-content h3 {
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+.application-content p {
+  color: #646464;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.application-content-detail {
+  margin-bottom: 25px;
+  background-color: #efefef;
+  display: block;
+  padding: 18px;
+}
+
+.application-content-detail tbody {
+  display: block;
+}
+
+.application-content-detail tbody tr {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.application-content-detail tbody tr:not(:first-child) {
+  margin-top: 12px;
+}
+
+.application-content-detail tbody tr th {
+  color: #646464;
+  font-weight: 300;
+}
+
+.application-content-detail tbody tr td {
+  text-align: right;
+}
+
+.application-content-detail tbody tr td span {
+  color: #6f6f6f;
+}
+
+.application-content .terms-area
+.terms-area-content
+.hook-parenthesis
+li
+.parentheses
+li
+.trademark
+.trademark-img
+img {
+  width: 150px;
+}
+
+.application-content label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.application-content label .requied {
+  margin-left: 4px;
+  color: #f00;
+}
+
+.application-content input:not(:first-child) {
+  margin-top: 0;
+}
+
+.application-content .postcode .button {
+  margin-top: 0;
+  margin-left: 20px;
+  width: 128px;
+  height: 34px;
+  background: #efefef;
+  color: #000;
+  border: 1px solid #767676;
+}
+
+.application-content .half {
+  width: 272px;
+}
+
+.application-content .radiobutton {
+  font-size: 16px;
+  padding: 0;
+}
+
+.application-content .radiobutton .radio-input + label {
+  padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    max-width: 350px;
+  }
+  .application-content {
+    max-width: 350px;
+  }
+  .application-content .postcode-textbox {
+    width: 200px !important;
+  }
+  .application-content .radiobutton {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align-last: left;
+    margin: 0;
+  }
+  .application-content .radiobutton label {
+    margin: 0;
+  }
+  .application-content .radiobutton label:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

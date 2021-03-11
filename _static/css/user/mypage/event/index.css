@@ -1,0 +1,17 @@
+.mypage-event {
+  width: 1024px;
+  min-height: 100vh;
+}
+
+.mypage-event h2 {
+  margin-top: 38px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #343434;
+}
+
+@media (max-width: 768px) {
+  .mypage-event {
+    width: 350px;
+  }
+}

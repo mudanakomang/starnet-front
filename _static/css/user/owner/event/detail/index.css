@@ -1,0 +1,128 @@
+.owner-event-user user {
+  margin: 32px auto 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.owner-event-user thead tr th {
+  padding: 0 12px 12px 0;
+  height: 26px;
+  font-size: 13px;
+  color: #383737ce;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 2px solid #d5d5d5;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.owner-event-user thead tr th:last-child {
+  text-align: right;
+}
+
+.owner-event-user thead tr th .create-event-button {
+  width: 101px;
+  height: 26px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #2185d0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.owner-event-user tbody tr {
+  border-bottom: 2px solid #ededed;
+}
+
+.owner-event-user tbody tr td {
+  padding: 18px 12px 21px 0;
+  font-size: 13px;
+  color: #383737ce;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.public-page-button {
+  width: 72px;
+  height: 24px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #2185d0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.detail-button,
+.edit-button {
+  width: 42px;
+  height: 24px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #2185d0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.delete-button {
+  width: 42px;
+  height: 24px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #d57bb5;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.tables {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.tables table {
+  width: 240px;
+}
+
+.tables table tbody tr td {
+  margin-top: 18px;
+}
+
+.tables table tbody tr .bold {
+  font-weight: 500;
+}
+
+.tables table tbody tr .small {
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .owner-event-heading {
+    max-width: 350px;
+    margin-left: 13px;
+    padding-top: 20px;
+  }
+
+  .owner-event-user {
+    margin-left: 13px;
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .owner-event-user::-webkit-scrollbar {
+    display: none;
+  }
+
+  .owner-event-user thead tr th {
+    padding-top: 16px;
+  }
+
+  .tables {
+    flex-direction: column;
+  }
+}

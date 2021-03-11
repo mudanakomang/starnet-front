@@ -1,0 +1,221 @@
+.event-search-contents {
+  margin: 46px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .event-search-contents {
+    max-width: 350px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.event-search-bar {
+  padding: 14px 17px;
+  max-width: 900px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  color: #717171;
+  font-size: 14px;
+  outline: 0;   
+}
+
+@media (max-width: 768px) {
+  .event-search-bar  {
+    margin: 0 12px 0 13px;
+    padding: 10px 17px;
+    display: flex;
+    align-items: center;
+    max-width: 227px;
+  }
+}
+
+.search {
+  max-width: 900px;
+  width: 100%;
+}
+
+.search-img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.is-sp {
+  display: none;
+}
+
+.filter-button {
+  max-width: 111px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #EA5419;
+  text-align: center;
+}
+
+.conditions {
+  display: flex;
+  align-items: center;
+  height: 53px;
+}
+
+@media (max-width: 768px) {
+  .conditions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 13px;
+    max-width: 375px;
+    height: 250px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    z-index: 99;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 16%);
+  }
+
+  .conditions-toggle {
+    display: none;
+  }
+}
+
+.condition-heading {
+  padding: 17px 0;
+  font-size: 13px;
+  line-height: 23px;
+  color: #636363;
+}
+
+.condition {
+  margin-left: 15px;
+  max-width: 126px;
+  width: 100%;
+  height: 37px;
+  border-radius: 5px;
+  background-color: #FABD2C;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .condition {
+    margin-top: 15px;
+  }
+}
+
+.event-icon-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.search-online {
+  margin-left: 106px;
+  font-size: 15px;
+  color: #3D3D3D;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .search-online  {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+}
+
+.search-online input[type="checkbox"]{
+  display: none;
+}
+/* チェックボックスの代わりを成すラベル */
+.search-online input[type="checkbox"]+label{
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 31px;
+  /* padding-right: 10px; */
+}
+/* ラベルの左に表示させる正方形のボックス□ */
+.search-online input[type="checkbox"]+label::before{
+  margin-right: 11px;
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  left: 0;
+  top: 50%;
+  border-radius: 5px;
+  background-color: #F2F2F2;
+}
+/* チェックが入った時のレ点 */
+.search-online input[type="checkbox"]:checked+label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 7.5px;
+  margin-top: -5px;
+  top: 50%;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color:  #3D3D3D;
+}
+
+
+.event-detail {
+  margin: 0 167px 0 15px;
+}
+
+@media (max-width: 768px) {
+  .event-detail {
+    margin: 0 62px 0 15px;
+  }
+}
+
+
+.try-to-more-button {
+  margin: 0 auto 100px auto;
+  padding-top: 9px;
+  max-width: 350px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #EA5419;
+  font-size: 16px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.event-icon-img {
+  width: 20px;
+  height: 20px;
+}

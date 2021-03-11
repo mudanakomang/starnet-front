@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アエルba</title>
+  <link rel="stylesheet" href="/_static/css/reset.css">
+  <link rel="stylesheet" href="/_static/css/common.css">
+  <link rel="stylesheet" href="/_static/css/owner.css">
+</head>
+<body>
+  <script src="/_static/js/header.js"></script>
+  <main>
+    <button class="filter-button" id="filterButton">
+      <span class="event-icon-img">
+        <img src="/_static/images/Ico_event.png" alt="">
+      </span>
+      開催イベントで絞り込む
+      <span class="event-icon-img">
+        <img src="/_static/images/Ico_last_arrow.png" alt="">
+      </span>
+    </button>
+    <div class="owner-contents" id="ownerContents">
+      <template id="ownerContentTemplate">
+        <div class="owner-content">
+          <div class="owner-img">
+            <img src="/_static/images/owner.png" alt="owner-img">
+          </div>
+          <div class="owner-details">
+            <div class="owner-profile">
+              <div class="owner-name">
+                主催者名
+              </div>
+              <div class="comprehensive-evaluation">
+                総合評価<span>4.1</span>
+                <div class="star">
+                  <img src="/_static/images/star.png" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="owner-description">
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量…
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="try-to-more-button">
+      <button>もっと見る</button>
+    </div>
+  </main>
+  <script src="/_static/js/footer.js"></script>
+  <script src="/_static/js/common.js"></script>
+  <script src="/_static/js/owner-content.js"></script>
+</body>
+</html>

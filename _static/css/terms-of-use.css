@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  main {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.trademark {
+  display: flex;
+}
+
+.trademark-description {
+  max-width: 70%;
+  width: 100%;
+}
+
+.trademark-img {
+  margin-left: 5px;
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+}
+
+.trademark-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.establishment-date {
+  margin-top: 12px;
+  text-align: right;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主催イベント - イベント編集</title>
+  <link rel="stylesheet" href="/_static/css/reset.css">
+  <link rel="stylesheet" href="/_static/css/common.css">
+</head>
+<body>
+  <script src="/_static/js/header.js"></script>
+  <main class="form-chank-small center">
+    <h2>主催イベント - イベント編集</h2>
+    <div class="form-content is-flex vertical-center">
+      <label for="MiddleCategory">イベントカテゴリ<span class="requied">必須</span></label>
+      <select name="MiddleCategory" id="Middlecategory" class="middle-category">
+        <option value="">3Charat判定会</option>
+        <option value="">3Charat判定会_特別価格</option>
+        <option value="">男女3キャラ体感ゲーム</option>
+        <option value="">男女3キャラ体感ゲーム_特別価格</option>
+        <option value="">パーソナル判定</option>
+        <option value="">判定会初級講座</option>
+        <option value="">判定会育成講座</option>
+        <option value="">アカデミー初級講座</option>
+        <option value="">アカデミー上級講座</option>
+        <option value="">アカデミー育成講座</option>
+        <option value="">アカデミー認定校講座</option>
+        <option value="">マリッジBASIC</option>
+        <option value="">マリッジADVANCE</option>
+        <option value="">マリッジEXPERT</option>
+        <option value="">ファッション</option>
+        <option value="">メイク</option>
+        <option value="">ヘアカット</option>
+        <option value="">ヘアセット</option>
+      </select>
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="EventTitle">イベント名</label>
+      <input type="text" id="EventTitle">
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="">開催日時<span class="requied">必須</span></label>
+      <div class="right is-flex vertical-center">
+        <p>日付</p><input type="date" class="right-date">
+        <p>開始</p><input type="time" class="right-time">
+        <p>終了</p><input type="time" class="right-time">
+      </div>
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="" class="checkbox-label">オンラインイベント</label>
+      <input type="checkbox">
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="">都道府県<span class="requied">必須</span></label>
+      <select name="pref_id" class="pref">
+        <option value="" selected>都道府県</option>
+        <option value="1">北海道</option>
+        <option value="2">青森県</option>
+        <option value="3">岩手県</option>
+        <option value="4">宮城県</option>
+        <option value="5">秋田県</option>
+        <option value="6">山形県</option>
+        <option value="7">福島県</option>
+        <option value="8">茨城県</option>
+        <option value="9">栃木県</option>
+        <option value="10">群馬県</option>
+        <option value="11">埼玉県</option>
+        <option value="12">千葉県</option>
+        <option value="13">東京都</option>
+        <option value="14">神奈川県</option>
+        <option value="15">新潟県</option>
+        <option value="16">富山県</option>
+        <option value="17">石川県</option>
+        <option value="18">福井県</option>
+        <option value="19">山梨県</option>
+        <option value="20">長野県</option>
+        <option value="21">岐阜県</option>
+        <option value="22">静岡県</option>
+        <option value="23">愛知県</option>
+        <option value="24">三重県</option>
+        <option value="25">滋賀県</option>
+        <option value="26">京都府</option>
+        <option value="27">大阪府</option>
+        <option value="28">兵庫県</option>
+        <option value="29">奈良県</option>
+        <option value="30">和歌山県</option>
+        <option value="31">鳥取県</option>
+        <option value="32">島根県</option>
+        <option value="33">岡山県</option>
+        <option value="34">広島県</option>
+        <option value="35">山口県</option>
+        <option value="36">徳島県</option>
+        <option value="37">香川県</option>
+        <option value="38">愛媛県</option>
+        <option value="39">高知県</option>
+        <option value="40">福岡県</option>
+        <option value="41">佐賀県</option>
+        <option value="42">長崎県</option>
+        <option value="43">熊本県</option>
+        <option value="44">大分県</option>
+        <option value="45">宮崎県</option>
+        <option value="46">鹿児島県</option>
+        <option value="47">沖縄県</option>
+      </select>
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="">市区町村以降の住所</label>
+      <div class="address">
+        <input type="text">
+        <p class="annotation">
+          <small>※こちらに掲載した住所はグーグルマップで表示されますので入力の際には正式な情報をお願いします。</small>
+        </p>
+      </div>
+    </div>
+    <div class="form-content is-flex vertical-center">
+      <label for="">カバー画像<span class="requied">必須</span></label>
+      <input type="submit" value="ファイルを選択" class="file-button">
+    </div>
+    <div class="form-content is-flex">
+      <label for="">詳細<span class="requied">必須</span></label>
+      <textarea name="" id=""></textarea>
+    </div>
+    <div class="is-flex button-wrapper center">
+      <input type="submit" value="下書きとして保存" class="button button-reverse">
+      <input type="submit" value="公開" class="button">
+    </div>
+  </main>
+  <script src="/_static/js/footer.js"></script>
+  <script src="/_static/js/common.js"></script>
+</body>
+</html>

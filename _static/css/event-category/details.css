@@ -1,0 +1,283 @@
+.first-view {
+  margin: 62px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-view-img {
+  max-width: 900px;
+  width: 100%;
+  height: 450px;
+}
+
+.first-view-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-category-heading {
+  margin-top: 33px;
+  font-size: 30px;
+  color: #3D3D3D;
+}
+
+.details-contents {
+  margin: 27.65px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+}
+
+.details-left-content {
+  padding: 24px 193.12px 16px 0;
+  max-width: 603.12px;
+  width: 100%;
+  border-top: 1px solid #B5B5B5;
+  border-bottom: 1px solid #B5B5B5;
+}
+
+.details-left-content h3 {
+  font-size: 12px;
+  color: #646464;
+  font-weight: 500;
+}
+
+.details-description {
+  margin-top: 8px;
+  max-width: 410px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3E3E3E;
+}
+
+.details-right-content {
+  max-width: 300px;
+  width: 100%;
+  padding-top: 21.35px;
+  padding-left: 20.88px;
+  border-top: 1px solid #B5B5B5;
+  border-left: 1px solid #B5B5B5;
+  border-bottom: 1px solid #B5B5B5;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-fee {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color:#646464;
+  font-weight: 500;
+}
+
+.entry-fee span {
+  margin-right: 27px;
+  color: #000000;
+}
+
+.application {
+  margin: 17px auto 0 auto;
+  max-width: 275px;
+  width: 100%;
+  height: 48px;
+  background-color: #EA5419;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.warning-note {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.holding-plan-event-heading {
+  margin: 19.35px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  font-size: 12px;
+  color: #646464;
+  font-weight: 500;
+}
+
+.event-contents {
+  margin-bottom: 0;
+}
+
+.event-content:nth-child(-n+3) {
+  margin-top: 19px;
+}
+
+.event-detail {
+  margin: 0 167px 0 15px;
+}
+
+.try-to-more-holding-plan-event-button {
+  margin: 13px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  height: 21px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.try-to-more-holding-plan-event-button button {
+  width: 75px;
+  height: 100%;
+  font-size: 15px;
+  color: #EA5419;
+}
+
+.event-organizer-heading {
+  margin: 46px auto 0 auto;
+  max-width: 900px;
+  width: 100%;
+  font-size: 12px;
+  color: #646464;
+  font-weight: 500;
+}
+
+.owner-content {
+  margin-top: 41px;
+}
+
+.owner-content:nth-child(-n+3) {
+  margin-top: 19px;
+}
+
+.try-to-more-event-organizer-button {
+  margin: 17px auto 100px auto;
+  max-width: 900px;
+  width: 100%;
+  height: 21px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.try-to-more-event-organizer-button button {
+  width: 75px;
+  height: 100%;
+  font-size: 15px;
+  color: #EA5419;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-bottom: 145px;
+  }
+
+  .first-view {
+    margin-top: 20px;
+    max-width: 350px;
+  }
+
+  .first-view-img {
+    max-width: 350px;
+    height: 200px;
+  }
+
+  .event-category-heading {
+    margin: 16px auto 0 auto;
+    max-width: 326px;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .event-title {
+    margin: 5px auto 0 auto;
+    max-width: 326px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .details-contents {
+    margin: 14px auto 0 auto;
+    flex-direction: column-reverse;
+  }
+
+  .details-left-content {
+    margin: 16px auto 0 auto;
+    padding: 0;
+    max-width: 326.5px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .details-right-content  {
+    margin: 0 auto;
+    max-width: 326.5px;
+    padding-top: 14px;
+    padding-left: 0;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .applications {
+    padding: 15px 0 7px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    border: none;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 16%);
+  }
+
+  .applications .application {
+    margin-top: 0;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .applications .application button {
+    max-width: 275px;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .applications .warning-note {
+    margin: 3px auto 0 auto;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+    color: #666666;
+  }
+
+  .holding-plan-event-heading {
+    margin-top: 30px;
+    max-width: 325px;
+  }
+
+  .event-contents {
+    margin-top: 0;
+  }
+
+  .event-detail {
+    margin: 0 62px 0 15px;
+  }
+
+  .try-to-more-holding-plan-event-button {
+    max-width: 325px;
+  }
+
+  .event-organizer-heading {
+    margin-top: 20px;
+    max-width: 325px;
+  }
+
+  .try-to-more-event-organizer-button {
+    margin-top: 20px;
+    max-width: 325px;
+  }
+}

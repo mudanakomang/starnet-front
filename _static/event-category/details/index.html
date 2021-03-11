@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アエルba</title>
+  <link rel="stylesheet" href="/_static/css/reset.css">
+  <link rel="stylesheet" href="/_static/css/common.css">
+  <link rel="stylesheet" href="/_static/css/event-category/details.css">
+</head>
+<body>
+  <script src="/_static/js/header.js"></script>
+  <main>
+    <div class="first-view">
+      <div class="first-view-img">
+        <img src="/_static/images/event-details.png" alt="">
+      </div>
+      <h2 class="event-category-heading">
+        イベントカテゴリー
+      </h2>
+    </div>
+    <div class="details-contents">
+      <div class="details-left-content">
+        <h3>詳細</h3>
+        <div class="details-description">
+          この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
+          <br>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+          この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+          この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>
+          <br>この文章はダミーです。文字の大きさ、量、字間、行間等を確認
+        </div>
+      </div>
+      <div class="details-right-content">
+        <div class="entry-fee">
+          参加費 <span>0000¥</span>
+        </div>
+        <button onclick="location.href='#'" class="application is-pc">
+          申し込む
+        </button>
+        <div class="warning-note is-pc">
+          ※主催者・開催日・開催場所などが決まっている場合は該当のイベントからお申し込みください。確定されていない場合はこちらからお申込みいただき、後日メールにて調整のご連絡を差し上げます。
+        </div>
+      </div>
+      <div class="applications is-sp">
+        <div onclick="location.href='#'" class="application">
+          <button>
+            申し込む
+          </button>
+        </div>
+        <div class="warning-note">
+          ※主催者・開催日・開催場所などが決まっている場合は該当のイベントからお申し込みください。確定されていない場合はこちらからお申込みいただき、後日メールにて調整のご連絡を差し上げます。
+        </div>
+      </div>
+    </div>
+    <h3 class="holding-plan-event-heading">このイベントカテゴリの開催予定のイベント</h3>
+    <div class="event-contents" id="eventContents">
+      <template id="contentTemplate">
+        <div class="event-content">
+          <div class="event-date">
+            11月<br>
+            <span>21</span>
+          </div>
+          <div class="event-detail">
+            <div class="event-time">
+              土曜日 15:00
+            </div>
+            <div class="event-prefecture">
+              都道府県
+            </div>
+            <div class="event-category">
+              イベントカテゴリ
+            </div>
+            <div class="event-title">
+              イベントタイトル
+            </div>
+          </div>
+          <div class="event-owner">
+            <div class="event-owner-img">
+              <img src="/_static/images/owner.png" alt="owner-img">
+            </div>
+            <div class="event-owner-name">
+              主催者名
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="try-to-more-holding-plan-event-button">
+      <button>もっと見る</button>
+    </div>
+    <h3 class="event-organizer-heading">このイベントを開催できる主催者</h3>
+    <div class="owner-contents" id="ownerContents">
+      <template id="ownerContentTemplate">
+        <div class="owner-content">
+          <div class="owner-img">
+            <img src="/_static/images/owner.png" alt="owner-img">
+          </div>
+          <div class="owner-details">
+            <div class="owner-profile">
+              <div class="owner-name">
+                主催者名
+              </div>
+              <div class="comprehensive-evaluation">
+                総合評価<span>4.1</span>
+                <div class="star">
+                  <img src="/_static/images/star.png" alt="star">
+                </div>
+              </div>
+            </div>
+            <div class="owner-description">
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量…
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="try-to-more-event-organizer-button">
+      <button>もっと見る</button>
+    </div>
+  </main>
+  <script src="/_static/js/footer.js"></script>
+  <script src="/_static/js/common.js"></script>
+  <script src="/_static/js/event-category-details-content.js"></script>
+</body>
+</html>
